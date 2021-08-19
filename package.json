@@ -28,5 +28,8 @@
     "react-native": ">=0.33"
   },
   "author": "zo0r <http://zo0r.me>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-native-push-notification": "^7.4.0"
+  }
 }

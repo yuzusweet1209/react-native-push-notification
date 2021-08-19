@@ -1,4 +1,15 @@
 buildscript {
+    ext {
+        googlePlayServicesVersion = "+" // default: "+"
+        firebaseMessagingVersion = "21.1.0" // default: "21.1.0"
+
+        // Other settings
+        compileSdkVersion = "29" // default: 23
+        buildToolsVersion = "23.0.2" // default: "23.0.1"
+        targetSdkVersion = "23" // default: 23
+        supportLibVersion = "23.1.1" // default: 23.1.1
+    }
+
     repositories {
         mavenCentral()
         google()
@@ -6,6 +17,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0'
+        implementation project(':react-native-push-notification')
     }
 }
 
